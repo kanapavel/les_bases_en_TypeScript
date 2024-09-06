@@ -1,4 +1,4 @@
-function addition(x : number, y : number): number {
+function addition(x, y) {
     return x + y;
 }
 const result = addition(10, 20);

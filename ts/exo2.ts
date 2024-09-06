@@ -4,46 +4,46 @@
 // Vous allez devoir modifier les types déjà définis et en créer d'autres.
 // ====================
 
-type Character = {
-    name: string;
-    life: number;
-    attack: number;
-    defense: number;
+type Characters = {
+   name: string;
+   life: number;
+   attack: number;
+   defense: number;
  };
  
- type Pet = Character;
+ type Pets = Characters;
  
- type Hero = Character &{
+ type Heros = Characters &{
     pets?: Array<Pet>;
     equipments?: Array<Equipment>;
  };
 
- type MagicalPet = Pet & WithMagic;
+ type MagicalPets = Pet & WithMagics;
 
- type Equipment = {
+ type Equipments = {
     price: number;
     attack?: number;
     defense?: number;
  }
 
- type WithMagic = {
+ type WithMagics = {
     magic: number;
  }
- 
- type Magician = Hero & WithMagic;
+
+ type Magicians = Heros & WithMagics;
  
  // ====================
  // Ne touchez PAS aux lignes ci-dessous, faites en sorte que TypeScript
  // soit content en modifiant UNIQUEMENT le code du dessus !
  
- const babyDragon: Pet = {
+ const babyDragons: Pets = {
     name: 'Typeon',
     life: 50,
     attack: 10,
     defense: 20,
  };
  
- const babyLicorn: MagicalPet = {
+ const babyLicorns: MagicalPets = {
     name: 'Typemoor',
     life: 80,
     attack: 5,
@@ -51,34 +51,34 @@ type Character = {
     magic: 50,
  };
  
- const smallArmor: Equipment = {
+ const smallArmors: Equipments = {
     price: 30,
     attack: 2,
     defense: 5,
  };
  
- const smallSword: Equipment = {
+ const smallSwords: Equipments = {
     price: 20,
     attack: 5,
  };
  
- const smallShield: Equipment = {
+ const smallShields: Equipments = {
     price: 15,
     defense: 10,
  };
  
- const smallMagicalWand: Equipment & WithMagic = {
+ const smallMagicalWands: Equipments & WithMagics = {
     price: 50,
     attack: 4,
     magic: 10,
  };
  
- const myWarriorHero: Hero = {
+ const myWarriorHeros: Heros = {
     name: 'TSolomon',
     life: 200,
     attack: 30,
     defense: 50,
-    pets: [babyDragon, babyLicorn],
+    pets: [babyDragons, babyLicorns],
     equipments: [
        smallArmor,
        smallSword,
@@ -86,12 +86,12 @@ type Character = {
     ],
  };
  
- const myMagicienHero: Magician = {
+ const myMagicienHeros: Magicians = {
     name: 'TSoren',
     life: 150,
     attack: 20,
     defense: 40,
-    equipments: [smallMagicalWand],
+    equipments: [smallMagicalWands],
     magic: 200,
  };
  

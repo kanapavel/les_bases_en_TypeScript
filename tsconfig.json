@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "target": "ES6",
+        "noEmitOnError": true,
+    },
+    "files": [
+        "ts/exo1.ts",
+        "ts/exo2.ts",
+        "ts/exo3.ts",
+        "ts/index.ts"
+    ]
+}

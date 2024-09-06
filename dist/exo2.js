@@ -6,54 +6,54 @@
 // ====================
 // Ne touchez PAS aux lignes ci-dessous, faites en sorte que TypeScript
 // soit content en modifiant UNIQUEMENT le code du dessus !
-const babyDragon = {
+const babyDragons = {
     name: 'Typeon',
     life: 50,
     attack: 10,
     defense: 20,
 };
-const babyLicorn = {
+const babyLicorns = {
     name: 'Typemoor',
     life: 80,
     attack: 5,
     defense: 30,
     magic: 50,
 };
-const smallArmor = {
+const smallArmors = {
     price: 30,
     attack: 2,
     defense: 5,
 };
-const smallSword = {
+const smallSwords = {
     price: 20,
     attack: 5,
 };
-const smallShield = {
+const smallShields = {
     price: 15,
     defense: 10,
 };
-const smallMagicalWand = {
+const smallMagicalWands = {
     price: 50,
     attack: 4,
     magic: 10,
 };
-const myWarriorHero = {
+const myWarriorHeros = {
     name: 'TSolomon',
     life: 200,
     attack: 30,
     defense: 50,
-    pets: [babyDragon, babyLicorn],
+    pets: [babyDragons, babyLicorns],
     equipments: [
         smallArmor,
         smallSword,
         smallShield,
     ],
 };
-const myMagicienHero = {
+const myMagicienHeros = {
     name: 'TSoren',
     life: 150,
     attack: 20,
     defense: 40,
-    equipments: [smallMagicalWand],
+    equipments: [smallMagicalWands],
     magic: 200,
 };

@@ -32,7 +32,7 @@ type Character = {
  // Consigne n°3
  // Transformez ce type en générique.
  // Il est utilisé plus bas dans ce code.
- type WithMagic <itemType> = itemType & {
+ type WithMagic<T> = T & {
     magic: number;
  }
  
@@ -76,7 +76,7 @@ type Character = {
     price: 20,
     attack: 5,
  };
- 
+
  const smallShield: Equipment = {
     price: 15,
     defense: 10,
